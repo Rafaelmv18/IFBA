@@ -24,7 +24,7 @@ public class Carro {
         this.completo = completo;
     }
 
-    public cadastrar(int codigo, String marca, String cor, String modelo, int anoFabricacao, int numPortas, String tipoCombustivel, int quantidadeDisponivel, Double preco, boolean completo) {
+    public void cadastrar(int codigo, String marca, String cor, String modelo, int anoFabricacao, int numPortas, String tipoCombustivel, int quantidadeDisponivel, Double preco, boolean completo) {
         this.codigo = codigo;
         this.marca = marca;
         this.cor = cor;
@@ -38,7 +38,7 @@ public class Carro {
     }
 
 
-    public alterar(int codigo, String marca, String cor, String modelo, int anoFabricacao, int numPortas, String tipoCombustivel, int quantidadeDisponivel, Double preco, boolean completo) {
+    public void alterar(int codigo, String marca, String cor, String modelo, int anoFabricacao, int numPortas, String tipoCombustivel, int quantidadeDisponivel, Double preco, boolean completo) {
         this.cadastrar(codigo, marca, cor, modelo, anoFabricacao, numPortas, tipoCombustivel, quantidadeDisponivel, preco, completo);
     }
 

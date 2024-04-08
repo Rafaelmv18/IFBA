@@ -23,7 +23,7 @@ public class Funcionario{
         this.Matricula = Matricula;
     }
 
-    public cadastrar(String Nome, String Nascimento, String RG, String CPF, String Endereco, String Naturalidade, Double Salario, String Profissao, String Grau_Instrucao, String Matricula){
+    public void cadastrar(String Nome, String Nascimento, String RG, String CPF, String Endereco, String Naturalidade, Double Salario, String Profissao, String Grau_Instrucao, String Matricula){
         this.Nome = Nome;
         this.Nascimento = Nascimento;
         this.RG = RG;
@@ -36,7 +36,7 @@ public class Funcionario{
         this.Matricula = Matricula;
     }
 
-    public alterar(String Nome, String Nascimento, String RG, String CPF, String Endereco, String Naturalidade, Double Salario, String Profissao, String Grau_Instrucao, String Matricula){
+    public void alterar(String Nome, String Nascimento, String RG, String CPF, String Endereco, String Naturalidade, Double Salario, String Profissao, String Grau_Instrucao, String Matricula){
         this.cadastrar(Nome, Nascimento, RG, CPF, Endereco, Naturalidade, Salario, Profissao, Grau_Instrucao, Matricula);
     }
 

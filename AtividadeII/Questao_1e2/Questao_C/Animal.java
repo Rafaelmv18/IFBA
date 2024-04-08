@@ -1,36 +1,35 @@
-public class Animal{
-    public String Especie;
-    public String DataNascimento; 
-    public String Nome;
-    public int NumeroRegistro;
-    public String LocalNascimento;
+public class Animal {
+    public String especie;
+    public String dataNascimento; 
+    public String nome;
+    public int numeroRegistro;
+    public String localNascimento;
 
-    public AnimalZoologico(String Especie, String DataNascimento, String Nome, int NumeroRegistro, String LocalNascimento){
-        this.Especie = Especie;
-        this.DataNascimento = DataNascimento;
-        this.Nome = Nome;
-        this.NumeroRegistro = NuUmeroRegistro;
-        this.LocalNascimento = LocalNascimento;
+    public Animal(String especie, String dataNascimento, String nome, int numeroRegistro, String localNascimento) {
+        this.especie = especie;
+        this.dataNascimento = dataNascimento;
+        this.nome = nome;
+        this.numeroRegistro = numeroRegistro;
+        this.localNascimento = localNascimento;
     }
 
-    public cadastrar(String Especie, String DataNascimento, String Nome, int NumeroRegistro, String LocalNascimento){
-        this.Especie = Especie;
-        this.DataNascimento = DataNascimento;
-        this.Nome = Nome;
-        this.NumeroRegistro = NuUmeroRegistro;
-        this.LocalNascimento = LocalNascimento;
+    public void cadastrar(String especie, String dataNascimento, String nome, int numeroRegistro, String localNascimento) {
+        this.especie = especie;
+        this.dataNascimento = dataNascimento;
+        this.nome = nome;
+        this.numeroRegistro = numeroRegistro;
+        this.localNascimento = localNascimento;
     }
 
-    public alterar(String Especie, String DataNascimento, String Nome, int NumeroRegistro, String LocalNascimento){
-        this.cadastrar(Especie, DataNascimento, Nome, NumeroRegistro, LocalNascimento);
+    public void alterar(String especie, String dataNascimento, String nome, int numeroRegistro, String localNascimento) {
+        this.cadastrar(especie, dataNascimento, nome, numeroRegistro, localNascimento);
     }
 
-    public informacoes(){
-        System.out.println("Espécie: " + Especie);
-        System.out.println("Data de Nascimento: " + DataNascimento);
-        System.out.println("Nome: " + Nome);
-        System.out.println("Número de Registro: " + NumeroRegistro);
-        System.out.println("Local de Nascimento: " + LocalNascimento);
-
+    public void informacoes() {
+        System.out.println("Espécie: " + especie);
+        System.out.println("Data de Nascimento: " + dataNascimento);
+        System.out.println("Nome: " + nome);
+        System.out.println("Número de Registro: " + numeroRegistro);
+        System.out.println("Local de Nascimento: " + localNascimento);
     }
 }

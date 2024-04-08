@@ -1,38 +1,36 @@
-package Banco;
-
 public class Banco{
-    public String NomeCorrentista;
-    public String RG;
-    public String CPF;
-    public Double saldo;    
-    public Double numero;    
+    public String nomeCorrentista;
+    public String rg;
+    public String cpf;
+    public double saldo;    
+    public double numero;    
     public String agencia;    
 
-    public ContaPoupanca(String NomeCorrentista, String RG, String CPF, Double saldo, Double numero, String agencia){
-        this.NomeCorrentista = NomeCorrentista;
-        this.RG = RG;
-        this.CPF = CPF;
+    public Banco(String nomeCorrentista, String rg, String cpf, double saldo, double numero, String agencia) {
+        this.nomeCorrentista = nomeCorrentista;
+        this.rg = rg;
+        this.cpf = cpf;
         this.saldo = saldo;
-        this.numer = numero;
+        this.numero = numero;
         this.agencia = agencia;
     }
 
-    public cadastrar(String NomeCorrentista, String RG, String CPF, Double saldo, Double numero, String agencia){
-        this.NomeCorrentista = NomeCorrentista;
-        this.RG = RG;
-        this.CPF = CPF;
+    public void cadastrar(String nomeCorrentista, String rg, String cpf, double saldo, double numero, String agencia){
+        this.nomeCorrentista = nomeCorrentista;
+        this.rg = rg;
+        this.cpf = cpf;
         this.saldo = saldo;
-        this.numer = numero;
+        this.numero = numero;
         this.agencia = agencia;
     }
 
-    public alterar(String NomeCorrentista, String RG, String CPF, Double saldo, Double numero, String agencia){
-        this.cadastrar(NomeCorrentista, RG, CPF, saldo, numero, agencia);
+    public void alterar(String nomeCorrentista, String rg, String cpf, double saldo, double numero, String agencia) {
+        this.cadastrar(nomeCorrentista, rg, cpf, saldo, numero, agencia);
     }
 
-    public ImprimirSaldo(){
-        System.out.println("Nome do Corretista" + NomeCorrentista);
-        System.out.println("CPF" + CPF);
-        System.out.println("Saldo" + saldo);
+    public void imprimirSaldo() {
+        System.out.println("Nome do Corretista: " + nomeCorrentista);
+        System.out.println("CPF: " + cpf);
+        System.out.println("Saldo: " + saldo);
     }
 }
