@@ -1,43 +1,43 @@
-public class Professor{
-    public Strig nome;
+public class Professor {
+    public String nome;
     public String titulacao;
     public String formacao;
-    public int CargaHoraria;
-    public Double Salario;
-    public String DescricaoDisciplinas;
+    public int cargaHoraria;
+    public double salario;
+    public String descricaoDisciplinas;
 
-    public Professor(String nome, String titulacao, String formacao, int cargaHoraria, double salario, String[] disciplinas) {
+    public Professor(String nome, String titulacao, String formacao, int cargaHoraria, double salario, String descricaoDisciplinas) {
         this.nome = nome;
         this.titulacao = titulacao;
-        this.fromacao = fromacao;
-        this.CargaHoraria = CargaHoraria;
-        this.Salario = Salario;
-        this.DescricaoDisciplinas = DescricaoDisciplinas;
+        this.formacao = formacao;
+        this.cargaHoraria = cargaHoraria;
+        this.salario = salario;
+        this.descricaoDisciplinas = descricaoDisciplinas;
     }
 
-    public cadastrar(String nome, String titulacao, String formacao, int CargaHoraria, Double Salario, String DescricaoDisciplinas){
+    public void cadastrar(String nome, String titulacao, String formacao, int cargaHoraria, double salario, String descricaoDisciplinas){
         this.nome = nome;
         this.titulacao = titulacao;
-        this.fromacao = fromacao;
-        this.CargaHoraria = CargaHoraria;
-        this.Salario = Salario;
-        this.DescricaoDisciplinas = DescricaoDisciplinas;
+        this.formacao = formacao;
+        this.cargaHoraria = cargaHoraria;
+        this.salario = salario;
+        this.descricaoDisciplinas = descricaoDisciplinas;
     }
 
-    public alterar(String nome, String titulacao, String formacao, int CargaHoraria, Double Salario)(){
-        this.cadastrar(nome, titulacao, formacao, CargaHoraria, Salario);
+    public void alterar(String nome, String titulacao, String formacao, int cargaHoraria, double salario, String descricaoDisciplinas){
+        this.cadastrar(nome, titulacao, formacao, cargaHoraria, salario, descricaoDisciplinas);
     }
 
-    public alterarDescricao(String DescricaoDisciplinas){
-        this.cadastrar(DescricaoDisciplinas);
+    public void alterarDescricao(String descricaoDisciplinas){
+        this.descricaoDisciplinas = descricaoDisciplinas;
     }
 
-    public dados(String nome, String titulacao, String formacao, int CargaHoraria, Double Salario, String DescricaoDisciplinas){
+    public void dados(){
         System.out.println("Nome: " + nome);
-        System.out.println("Tilulação: " + titulacao);
-        System.out.println("Formação: " + fromacao);
-        System.out.println("Carga Horária: " + CargaHoraria);
-        System.out.println("Salário: " + Salario);
-        System.out.println("Descrição das disciplinas que o professor pode ensinar: " + DescricaoDisciplinas);
+        System.out.println("Titulação: " + titulacao);
+        System.out.println("Formação: " + formacao);
+        System.out.println("Carga Horária: " + cargaHoraria + "horas");
+        System.out.println("Salário: " + salario);
+        System.out.println("Descrição das disciplinas que o professor pode ensinar: " + descricaoDisciplinas);
     }
 }
