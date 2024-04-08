@@ -1,13 +1,11 @@
-import java.util.Scanner;
-
-public class Questao1{
-    public Strig Modelo;
+public class Carro{
+    public String Modelo;
     public Double Velocidade;
     public Double Aceleracao;
     public int Marcha;
     public boolean ligar;
 
-    public Carro(Strig Modelo, Double Velocidade, Double Aceleracao, int Marcha){
+    public Carro(String Modelo, Double Velocidade, Double Aceleracao, int Marcha){
         this.Modelo = Modelo;
         this.Velocidade = Velocidade;
         this.Aceleracao = Aceleracao;
@@ -15,43 +13,43 @@ public class Questao1{
         this.ligar = false;
     }
 
-    public Ligar(){
+    public void Ligar(){
         this.ligar = true;
         System.out.println("Carro ligado");
     }
 
-    public Desligar(){
+    public void Desligar(){
         this.ligar = false;
         System.out.println("Carro desligado");
     }
 
-    public Acelerar(){
+    public void Acelerar(){
         if (ligar){
             Velocidade += Aceleracao;
-            System.out.println("Velociade do carro: " + Velociade + "Km/h");
+            System.out.println("Velocidade do carro: " + Velocidade + " Km/h");
         }else {
             System.out.println("Carro desligado");
         }
     }
 
-    public Desacelerar(){
-        if (ligado){
-            Velociade -= Aceleracao;
-            System.ou.println("Velociade do carro: " + Velociade + "Km/h")
+    public void Desacelerar(){
+        if (ligar){
+            Velocidade -= Aceleracao;
+            System.out.println("Velocidade do carro: " + Velocidade + " Km/h");
         } else{
             System.out.println("Carro desligado");
         }
     }
 
-    public Virar_Esquerda(){
+    public void Virar_Esquerda(){
         System.out.println("Virando para esquerda");
     }
 
-    public Virar_Direita(){
+    public void Virar_Direita(){
         System.out.println("Virando para direita");
     }
 
-    public Subir_Marcha(){
+    public void Subir_Marcha(){
         if (Marcha < 6){
             Marcha++;
             System.out.println("Marcha atual " + Marcha);
@@ -60,7 +58,7 @@ public class Questao1{
         }
     }
 
-    public Descer_Marcha(){
+    public void Descer_Marcha(){
         if (Marcha > 1){
             Marcha--;
             System.out.println("Marcha atual " + Marcha);
@@ -69,11 +67,11 @@ public class Questao1{
         }
     }
 
-    public EstatosAtuais(){
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Velocidade: " + velocidade + "Km/h");
-        System.out.println("Aceleração: " + aceleracao + "Km/h");
-        System.out.println("Marcha: " + marcha);
+    public void EstadosAtuais(){
+        System.out.println("Modelo: " + Modelo);
+        System.out.println("Velocidade: " + Velocidade + " Km/h");
+        System.out.println("Aceleração: " + Aceleracao + " m/s^2");
+        System.out.println("Marcha: " + Marcha);
         System.out.println("Carro está ligado: " + ligar);
     }
 }
