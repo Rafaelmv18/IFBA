@@ -20,5 +20,5 @@ public class ProgramaBiblioteca {
 /*
  * V- Foi possível adicionar no array, pois as classes Livro e Filme herdam a classe Publicacao.
  * 
- * VI - É possível imprir os dados, pois o metodo imprimeDados possui os dados gerais e na classe Filme e Livro chama o metodo imprimeDados mais os dados específicos, por isso os dados ficam corretos.
+ * VI - É possível imprir os dados, pois o metodo abstrato imprimeDados foi criado na classe pai e na classe Filme e Livro chama o metodo imprimeDados mas com os dados especificos de cada um.
  */
