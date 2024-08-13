@@ -1,0 +1,3 @@
+2.1- A sobrescrita é ultilizada nos metodos m1, ela é feita usando a mesma assinatura da classe pai, ou seja, na class A o  public void m1() não usa de nenhum parametro e na class B o public void m1(double x, double y) possui dois parametro,  então ela esta sobrescrevendo o metodo da classe pai, sendo apenas mais  especifica.
+
+2.2- A sobrecarga é ultilizada no metodo A(int x), m1(int h) e m1(double x, double y), ela é usada para fazer mais uma versão do mesmo método com diferentes parametros, como mostra na class A no public A() e public A( int x ), que seria a sobrecarga do primeiro metodo.
