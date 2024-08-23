@@ -1,4 +1,4 @@
-public class Cadastro{
+public class Professor{
 
     private String nome;
     private int idade;
@@ -9,7 +9,7 @@ public class Cadastro{
     private Dependente[] dependente;
     private int quantidade;
 
-    public Cadastro(String nome, int idade, String sexo, long cpf, long rg, String endereco){
+    public Professor(String nome, int idade, String sexo, long cpf, long rg, String endereco){
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
@@ -20,7 +20,7 @@ public class Cadastro{
         this.quantidade = 0;
     } 
 
-    public String getCpf(){
+    public long getCpf(){
         return cpf;
     }
 
@@ -28,11 +28,7 @@ public class Cadastro{
         this.cpf = cpf;
     }
 
-    public void adicionarDependente(Dependente dependente) throws Execao{
-        if (dependente > 5){
-            Excecao = new Excecao("Quantidade máxima atingida");
-            throw e;
-        }
-        dependente[quantidade++] = dependente;
+    public void adicionarDependente(Dependente dependente){
+        this.dependente[quantidade++] = dependente;
     }
 }

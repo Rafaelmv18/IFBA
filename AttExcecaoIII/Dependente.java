@@ -2,7 +2,7 @@ public class Dependente{
 
     private String nome;
     private int idade;
-    private Sring sexo;
+    private String sexo;
 
     public Dependente(String nome, int idade, String sexo) {
         this.nome = nome;
