@@ -16,9 +16,9 @@ public class Cadastro {
         livros.remove(livro);
     }
 
-    public void imprimirDados(Livro livro){
-        for(Livro livro : livros){
-            System.out.println(livro);
+    public void imprimirDados(){
+        for(Livro l : livros){
+            System.out.println(l);
         }
     }
 
@@ -34,7 +34,7 @@ public class Cadastro {
         }
     }
 
-    public boolean verificarLista(Livro livro){
+    public boolean verificarLista(){
         return livros.isEmpty();
     }
 }
