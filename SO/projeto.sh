@@ -20,6 +20,8 @@ instalar_cron() {
 ﻿
 #Função para adicionar tarefa no cron
 adicionar_tarefa() {
+    echo "Marcacoes do cron"
+    echo "* - minutos, * - horas, * dia, * - mes, * dia da semana"
     echo "Digite a frequência da tarefa (formato cron: * * * * *):"
     read -r FREQUENCIA
 ﻿
