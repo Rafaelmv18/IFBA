@@ -3,7 +3,7 @@
 #Variáveis globais
 LOG_FILE="/var/log/gerenciamento_cron.log"
 TEMP_CRON="/tmp/current_crontab"
-﻿
+
 #Função para instalar o pacote cron
 instalar_cron() {
     if ! dpkg -l | grep -q "cron"; then
@@ -17,43 +17,43 @@ instalar_cron() {
         echo "Cron já está instalado."
     fi
 }
-﻿
+
 #Função para adicionar tarefa no cron
 adicionar_tarefa() {
     echo "Marcacoes do cron"
     echo "* - minutos, * - horas, * dia, * - mes, * dia da semana"
     echo "Digite a frequência da tarefa (formato cron: * * * * *):"
     read -r FREQUENCIA
-﻿
+
     echo "Digite o comando a ser executado:"
     read -r COMANDO
-﻿
+
     # Adiciona a tarefa ao cron
     crontab -l > $TEMP_CRON  # Salva as tarefas existentes
     echo "$FREQUENCIA $COMANDO" >> $TEMP_CRON  # Adiciona a nova tarefa
     crontab $TEMP_CRON  # Atualiza o cron com a nova tarefa
     rm $TEMP_CRON  # Remove o arquivo temporário
-﻿
+
     echo "Tarefa adicionada com sucesso!"
     echo "$(date): Nova tarefa adicionada - $FREQUENCIA $COMANDO" >> $LOG_FILE
 }
-﻿
+
 #Função para remover tarefa do cron
 remover_tarefa() {
     crontab -l > $TEMP_CRON
     echo "Tarefas agendadas atualmente:"
     cat -n $TEMP_CRON  # Mostra as tarefas numeradas
-﻿
+
     echo "Digite o número da tarefa que deseja remover:"
     read -r NUMERO_TAREFA
-﻿
+
     sed -i "${NUMERO_TAREFA}d" $TEMP_CRON  # Remove a linha correspondente
     crontab $TEMP_CRON  # Atualiza o cron
-﻿
+
     echo "Tarefa removida com sucesso!"
     echo "$(date): Tarefa $NUMERO_TAREFA removida." >> $LOG_FILE
 }
-﻿
+
 #Função para listar as tarefas agendadas no cron
 listar_tarefas() {
     echo "Tarefas agendadas atualmente:"
@@ -68,9 +68,9 @@ menu_principal() {
     echo "2 - Remover tarefa"
     echo "3 - Listar tarefas agendadas"
     echo "4 - Sair"
-﻿
+
     read -r OPCAO
-﻿
+
     case $OPCAO in
         1)
             adicionar_tarefa
@@ -82,7 +82,7 @@ menu_principal() {
             listar_tarefas
             ;;
         4)
-            echo "Saindo..."
+            echo "Saindo"
             exit 0
             ;;
         *)
@@ -91,10 +91,10 @@ menu_principal() {
             ;;
     esac
 }
-﻿
+
 #Verifica e instala o cron se necessário
 instalar_cron
-﻿
+
 #Executa o menu principal
 while true; do
     menu_principal
