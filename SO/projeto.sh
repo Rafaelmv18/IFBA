@@ -1,6 +1,6 @@
 #!/bin/bash
 #Script para gerenciar tarefas automáticas com cron no Debian 12
-#Variáveis globais
+#Variáveis
 LOG_FILE="/var/log/gerenciamento_cron.log"
 TEMP_CRON="/tmp/current_crontab"
 
@@ -99,3 +99,7 @@ instalar_cron
 while true; do
     menu_principal
 done
+
+#Exemplos de codigo
+# echo "Teste" >> /tmp/teste.log
+# rm -rf /tmp/*
