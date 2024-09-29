@@ -4,6 +4,13 @@
 LOG_FILE="/var/log/gerenciamento_cron.log"
 TEMP_CRON="/tmp/current_crontab"
 
+# Função para exibir ajuda e resumo
+mostrar_ajuda() {
+    echo "Script para gerenciar tarefas automáticas com cron no Debian 12"
+    echo "Equipe: Rafael Venas e Lucas Bueno"
+    echo "Este script permite gerenciar tarefas cron, com funções para adicionar, remover e listar tarefas."
+}
+
 #Função para instalar o pacote cron
 instalar_cron() {
     if ! dpkg -l | grep -q "cron"; then
@@ -67,8 +74,9 @@ menu_principal() {
     echo "1 - Adicionar tarefa"
     echo "2 - Remover tarefa"
     echo "3 - Listar tarefas agendadas"
+    echo "h - Ajuda"
     echo "4 - Sair"
-
+    
     read -r OPCAO
 
     case $OPCAO in
@@ -91,6 +99,12 @@ menu_principal() {
             ;;
     esac
 }
+
+# Verifica se o parâmetro 'h' foi passado e exibe a ajuda
+if [[ "$1" == "h" ]]; then
+    mostrar_ajuda
+    exit 0
+fi
 
 #Verifica e instala o cron se necessário
 instalar_cron
