@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Ambiente
+comment1.params=l\ a\ vidasIniciais
+comment1.target=Ambiente(int,\ int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ atualizarCoracoes()
+comment4.params=
+comment4.target=void\ diminuirVida()
+comment5.params=patoCestaX\ patoCestaY\ patoTiroX\ patoTiroY
+comment5.target=void\ adicionarJogadores(int,\ int,\ int,\ int)
+comment6.params=
+comment6.target=void\ mostrarDerrota()
+numComments=7

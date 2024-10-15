@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Chave
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Chave\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Chave()
+comment2.params=
+comment2.target=void\ adicionarChave()
+comment3.params=
+comment3.target=int\ getTotalChaves()
+comment4.params=
+comment4.target=boolean\ podeSalvarPata()
+numComments=5

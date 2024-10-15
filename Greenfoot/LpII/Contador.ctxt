@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Contador
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Contador\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=prefixo\ valor
+comment1.target=Contador(java.lang.String,\ int)
+comment2.params=quantidade
+comment2.target=void\ incrementar(int)
+comment3.params=quantidade
+comment3.target=void\ decrementar(int)
+comment4.params=
+comment4.target=int\ getValor()
+comment5.params=novoValor
+comment5.target=void\ setValor(int)
+comment6.params=
+comment6.target=void\ atualizarImagem()
+numComments=7

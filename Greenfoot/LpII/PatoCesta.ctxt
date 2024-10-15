@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PatoCesta
+comment1.params=frutasContador
+comment1.target=PatoCesta(Contador)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=deltaX\ deltaY
+comment3.target=boolean\ verificarColisaoAdiante(int,\ int)
+numComments=4

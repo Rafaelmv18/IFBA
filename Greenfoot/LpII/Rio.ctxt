@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Rio
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ checarColisao()
+comment3.params=pato
+comment3.target=boolean\ verificarColisao(greenfoot.Actor)
+numComments=4

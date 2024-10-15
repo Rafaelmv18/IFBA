@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Ovo
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Ovo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=velocidade
+comment1.target=Ovo(int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ trajetoOvo()
+comment4.params=
+comment4.target=void\ removerOvoSeForaDoMundo()
+numComments=5
