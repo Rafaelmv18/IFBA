@@ -1,0 +1,43 @@
+Alunos: Rafael Mascarenhas Venas e Lucas Bueno de Faria
+
+1. Lista cinco exemplos de exceções comuns.
+	1- Um metodo que cadastra um aluno, pode ocorrer uma falha porque a matricula já está cadastrada.
+	2- Um metodo que seta uma senha, pode ocorrer um erro porque não possui caracteres especiais.
+	3- Um metodo que recebe um arquivo, pode ocorrer de receber um arquivo não compatível.
+	4- Um metodo que mandar um mensagem, pode ocorer dela ser maior do que o campo permite.
+	5- Um metodo que tenta acessar uma área do programa, pode ocorrer de não ter permissão para isso.
+
+2. Por que as técnicas de tratamento de exceções não devem ser utilizadas para controle convencional de programação?
+	A técnicas de tratamento de exceções devem ser utilizados quando algum erro inesperado acontece e não em casos que acontecem regularmente. Nesses casos é preferivel utilizar estruturas como 'if' e 'else'.
+
+3. Se nenhuma exceção for disparada em um bloco try, para onde segue o controle quando o bloco try completa a execução?
+	Se o código não entcontra nenhuma exceção será executado o "finally".
+
+4. O que acontece se ocorrer uma exceção e um tratador de exceções apropriado não puder ser localizado?
+	O programa não será execultado.
+
+5. O que acontece se vários tratadores correspondem ao tipo de objeto disparado?
+	O tratador lança uma execeção o programa pode parar a execeção ou pode lidar com a exceção.
+
+6. Qual é a razão fundamental para utilizar blocos finally?
+	Os blocos finally são utilizados para executar uma parte do código independente se encontrar um erro ou não.
+
+7. O que acontece quando um tratador catch dispara uma Exception?
+	Quando o código encontra um erro dentro do bloco try, ele para de executar, e o bloco catch é executado.
+
+8. O que acontece com uma referência local em um bloco try quando esse bloco dispara uma Exception?
+	Quando ocorre uma exceção no bloco try o código será direcionado para o bloco catch.
+
+9. Escreva um programa em Java que mostra que a ordem dos tratadores de exceções é importante. 
+Se você tentar capturar um tipo de exceção de superclasse antes de um tipo de subclasse, o compilador deve gerar erros.
+Explique por que ocorrem esse erros.
+	
+
+10. Construa uma classe chamada “ContaCorrente” , com os atributos “limite” que armazena a quantidade atual disponível 
+do limite da conta que o usuário possui , o atributo “saldo” que é o valor que realmente é pertencente ao usuário, 
+e o atributo “valorLimite” que consiste no valor máximo que o banco lhe fornece como valor de limite, todos float.
+ Construa os métodos public void, sacar(float valor), depositar(float valor), e setValorLimite(float valor) . 
+ Na construção dos três métodos faça com que eles lancem exceptions relacionados aos argumentos, por exemplo, sacar, 
+ depositar ou setar um valor negativo para esses eventos. Lance também uma exception no caso de tentar sacar um valor 
+ maior que o possível. Nós métodos lancem a exception “IllegalArgumentException()” (Java)com o comando adequado, passe o
+  motivo da exception(uma String) em seu construtor.

@@ -1,0 +1,18 @@
+1. O que é uma exceção em Java?
+    Uma exceção é quando existe um tratamento para situações especificas, exemplo um campo para colocar o CPF e o usuario coloca um numero a mais, vai entrar na exceção e o usuario vai receber uma mensagem
+
+2. Qual a diferença entre exceções verificadas (checked) e não verificadas
+(unchecked)?
+    Checked são exceções que o programador pode prever, ja as unchecked são erros que ocorrem durante a execução do programa e não sao verificadas pelo compilador
+
+3. Explique a estrutura try-catch em Java.
+    O código tenta executar o try caso exista alguma exceção ele sera direcionano para o cath que ira tratar a exceção
+
+4. Qual é a finalidade do bloco finally?
+    o bloco finally é para independente de ter uma exceção ou não ele sempre vai ser executado depois do bloco try ou cath
+
+5. Como você pode criar sua própria exceção em Java?
+    Precisa ter uma classe extends Exception, e usar ela no codigo para personalizar as exceções e no main usar no cath para quando tiver erro ela ser usada
+
+6. Quais são as boas práticas no uso de exceções em Java?
+    Evitar usar exceções que podem ser resolvidas por logica
