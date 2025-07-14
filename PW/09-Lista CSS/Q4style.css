@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+table{
+    width: 570px;
+    margin: 0 auto;
+    border: 1px solid #DDDDDD;
+    border-collapse: collapse;
+}
+
+th{
+    font-size: 13px;
+    color: #999999;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+td{
+    font-size: 14px;
+    color: #666666;
+    font-weight: normal;
+    text-align: center;
+    width: 35px;
+    border-top: 1px solid #DDDDDD
+}
+
+
+
+.libertadores .posicao, .corL{
+    color: #003366;
+}
+
+.pre_libertadores .posicao, .corPl{
+    color: #1398BE;
+}
+
+.sul_americana .posicao, .corS{
+    color: #DE9800;
+}
+
+.normal .posicao{
+    color: #CCCCCC;
+}
+
+.rebaixados .posicao, .corR{
+    color: #C91B04;
+}
+
+.posicao{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.time{
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    text-align: left;
+}
+
+.pontos{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pontos, .vitorias, .derrotas, .golsContra, .aproveitamento{
+    background-color: #F7F7F7;
+}
+
+footer {
+    width: 570px;
+    margin: 0 auto;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    padding: 5px;
+}
+
+.legenda p{
+    display: inline;
+    margin: 2px 0;
+    margin-right: 5px;
+    color: #8F8F8F;
+}
+
+.explicacoes {
+    color: #555555;
+    margin: 4px 0;
+}
