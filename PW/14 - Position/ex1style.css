@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    padding: 30px 20px;
+    margin: 10px;
+    border: 1px solid #000000;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header h1{
+    font-size: 17px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+header input{
+    cursor: pointer;
+    font-size: 17px;
+    padding: 2px 5px;
+    margin-right: 20px;
+}
+
+nav {
+    border: 1px solid #000000;
+    margin: 10px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1;
+    border-left: 1px solid #000;
+}
+
+nav ul li:first-child {
+    border-left: none; 
+}
+
+.dropdown li {
+    border-left: none; 
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.dropdown{
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 11%;
+}
+.dropdown a{
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li:hover ul {
+    display: block; 
+}
+
+.conteudo {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  align-items: stretch;
+}
+
+.principal {
+  flex: 3;
+  flex-direction: column;
+}
+
+section{
+    margin: 10px;
+}
+
+main{
+    border: 1px solid black;
+    height: 250px;
+}
+
+main h2{
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    padding: 2px 8px;
+}
+
+main img{
+    width: 200px;
+    background-color: #ccc;
+    height: 200px;
+    float: left;
+    margin: 5px;
+}
+
+main h3{
+    padding: 10px;
+}
+
+main p{
+    padding: 5px;
+}
+
+main input{
+    cursor: pointer;
+    margin: 30px 20px;
+    float: right;
+    background-color: white;
+    padding: 5px;
+}
+
+.artigos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0
+}
+
+article{
+    flex: 1;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+article h2{
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    padding: 2px 8px;
+}
+
+article input{
+    cursor: pointer;
+    margin: 0px 20px;
+    float: right;
+    background-color: white;
+    padding: 5px;
+}
+
+article div h4{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+article ul {
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+aside {
+    flex: 1;
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+}
+
+aside h2 {
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    padding: 2px 8px;
+}
+
+aside ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+aside img {
+    width: 33%;
+    margin: 20px;
+    height: 120px;
+    background-color: #ccc;
+}
+
+footer{
+    display: flex;
+    margin: 10px;
+    height: 50px;
+    font-size: 11px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+}
