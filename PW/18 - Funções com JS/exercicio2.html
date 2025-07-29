@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calcula o Fatoria</h2>
+    <form onsubmit="calculo(); return false;">
+        <input type="number" placeholder="Digite um número" id="numero">
+        <button type="submit">Calcular!</button>
+
+        <label>Resultado: </label>
+        <input type="text" id="resultado">
+    </form>
+
+    <script>
+
+        function fatorial(valor){
+            
+            if(valor === 0 || valor === 1)
+                return 1;
+            else
+                return valor * fatorial(valor - 1);
+        }
+
+        function calculo(){
+            let num = document.getElementById('numero').value;
+            num = parseInt(num);
+
+            let result = fatorial(num);
+            document.getElementById('resultado').value = result;
+        }
+    </script>
+
+</body>
+</html>

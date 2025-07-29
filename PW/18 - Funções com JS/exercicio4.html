@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multArray(arr, valor){
+            let novoArr = [];
+            for(let i = 0; i < arr.length; i++){
+                novoArr[i] = arr[i] * valor;
+            }
+            return novoArr;
+        }
+
+        let numeros = [1, 2, 3, 4, 5]
+        let valor = 5;
+        let result = multArray(numeros, valor);
+
+        document.write(`Array: ${numeros} <br>`);
+        document.write(`Multiplicado por 5: ${result}`);
+
+    </script>
+</body>
+</html>

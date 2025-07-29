@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <script>
+        let altura = prompt("Qual a sua altura em cm: ");
+        let massa = prompt("Qualo seu peso em kg: ");
+
+        altura = parseFloat(altura);
+        massa = parseFloat(massa);
+
+        let imc = (massa * 10000) / (altura * altura);
+
+        let classificacao = "";
+
+        if (imc < 18) {
+            classificacao = "Magreza leve";
+        } else if (imc >= 18 && imc < 25) {
+            classificacao = "Saudável";
+        } else if (imc >= 25 && imc < 30) {
+            classificacao = "Sobrepeso";
+        } else {
+            classificacao = "Obesidade";
+        }
+
+        alert(`O IMC para a altura: ${altura} cm e peso: ${massa} kg é ${classificacao}.`);
+    </script>
+</body>
+</html>
