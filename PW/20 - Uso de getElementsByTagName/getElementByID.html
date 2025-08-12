@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validacao(){
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const cidade = document.getElementById('cidade').value;
+            const estado = document.getElementById('estado').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            if(nome == ""){
+                alert('Prencha o nome!');
+                return false;
+            }
+
+            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regexEmail.test(email)) {
+                alert("Digite um email válido.");
+                return false;
+            }
+
+            if(cidade == ""){
+                alert('Prencha a cidade!');
+                return false;
+            }
+
+            if(estado == ""){
+                alert('Prencha um estado!');
+                return false;
+            }
+
+            if(mensagem == ""){
+                alert('Prencha um mensagem!');
+                return false;
+            }
+
+            alert('Formulário emviado com sucesso!');
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validacao()">
+        <label>Nome:</label>
+        <input type="text" id="nome">
+        <br>
+        <br>
+        <label>Email:</label>
+        <input type="email" id="email">
+        <br>
+        <br>
+        <label>Cidade:</label>
+        <input type="text" id="cidade">
+        <br>
+        <br>
+        <label>Estado:</label>
+        <select id="estado">
+             <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+        <br><br>
+        <label>Mensagem:</label>
+        <textarea id="mensagem" rows="4" cols="40"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar!">
+    </form>
+</body>
+</html>

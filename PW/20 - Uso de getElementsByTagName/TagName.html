@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>DOM Tutorial</title> 
+</head>
+<body>
+    <h1>DOM Lesson one</h1>
+    <p>Hello world!</p>
+
+    <ul>
+        <li>Item 1 da primeira lista</li>
+        <li>Item 2 da primeira lista</li>
+    </ul>
+
+    <ul>
+        <li>Item 1 da segunda lista</li>
+        <li>Item 2 da segunda lista</li>
+        <li>Item 3 da segunda lista</li>
+    </ul>
+
+    <script>
+        let listas = document.getElementsByTagName("ul");
+
+        let segundaLista = listas[1];
+
+        let itensSegundaLista = segundaLista.children;
+
+        for (let i = 0; i < itensSegundaLista.length; i++) {
+            console.log(itensSegundaLista[i].innerText);
+        }
+    </script>
+</body>
+</html>
