@@ -62,11 +62,9 @@
     }
 
     if (!campoInformado("cpf") || !campoNaoVazio("cpf")) {
-        $erros[] = "O campo CPF é obrigatório.";
-    } elseif (!somenteNumeros("cpf")) {
-        $erros[] = "O CPF deve conter apenas números.";
-    } elseif (!tamanhoMaximo("cpf", 11)) {
-        $erros[] = "O CPF deve ter no máximo 11 dígitos.";
+    $erros[] = "O campo CPF é obrigatório.";
+    } elseif (!validarCPF($_POST["cpf"])) {
+        $erros[] = "O CPF informado não é válido.";
     }
 
     if (count($erros) > 0) {
